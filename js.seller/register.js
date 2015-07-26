@@ -71,8 +71,7 @@ $(function(){
 				&& checkLoginName()
 				&& checkPassword() 
 				&& checkPassword2()
-				&& wrappedCheckMobile()
-				&& checkValidate());
+				&& wrappedCheckMobile());
 	});
 	
 	$('#loginName, #nickname, #password, #password2, #mobile, #validate').focus(focusHandler);
@@ -112,26 +111,26 @@ function fn() {
 function wrappedCheckMobile() {
 	var ret = checkMobile();
 	
-	if(ret) {
-		if($('#validate').hasClass('success-gou')) {
-			if($('#mobile').val() === $('#validate').attr('passedMobile')) {
-				// do nothing
-			
-			} else {
-				$('#btnSms').removeClass('disabled').html('获取短信验证码');
-				$('#validate').val('').removeClass('success-gou');
-				$('#validate_msg').removeClass('errTxt').find('span').html('点击获取手机短信验证码， 不区分大小写');
-			}
-			
-		} else {
-			$('#btnSms').removeClass('disabled').html('获取短信验证码');			
-		}
-		
-	} else {
-		$('#btnSms').addClass('disabled').html('获取短信验证码');
-		$('#validate').val('').removeClass('success-gou');
-		$('#validate_msg').removeClass('errTxt').find('span').html('点击获取手机短信验证码， 不区分大小写');
-	}
+//	if(ret) {
+//		if($('#validate').hasClass('success-gou')) {
+//			if($('#mobile').val() === $('#validate').attr('passedMobile')) {
+//				// do nothing
+//			
+//			} else {
+//				$('#btnSms').removeClass('disabled').html('获取短信验证码');
+//				$('#validate').val('').removeClass('success-gou');
+//				$('#validate_msg').removeClass('errTxt').find('span').html('点击获取手机短信验证码， 不区分大小写');
+//			}
+//			
+//		} else {
+//			$('#btnSms').removeClass('disabled').html('获取短信验证码');			
+//		}
+//		
+//	} else {
+//		$('#btnSms').addClass('disabled').html('获取短信验证码');
+//		$('#validate').val('').removeClass('success-gou');
+//		$('#validate_msg').removeClass('errTxt').find('span').html('点击获取手机短信验证码， 不区分大小写');
+//	}
 	
 	return ret;
 }
