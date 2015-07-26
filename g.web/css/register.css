@@ -1,0 +1,332 @@
+/**
+ * style register
+ * 
+ * @project		
+ * @copyright	
+ * @author		zhanghaibin
+ * @version 	1.0
+ * 
+ * @colordef 	#333 				article text
+ * @colordef	#316cd6				link & visible
+ * @colordef	#ff5c00				hover & active
+ */
+
+/**
+ * CSS Menu
+ * 
+ * 
+ * 
+ * 
+ * Layout
+ * 
+ */
+
+
+/* Register
+ ---------------------------------------- */
+
+#regsignin #header>.wrap,
+#regsignin #container>.wrap,
+#regsignin #footer>.wrap {
+	width: 1000px;
+}
+#regsignin #container>.wrap {
+	padding: 20px 0;
+}
+.checkHint{
+	position: static;
+	*position:relative;
+	display: table;
+	color: #999;
+}
+.checkHint .hintBox{
+	position: static;
+	*position:absolute;
+	display: table-cell;
+	vertical-align: middle;
+	top: 50%;
+	width: 100%;
+}
+.checkHint .hintBox span{
+	display: block;
+	position: relative;
+	top: -50%;
+	width: 100%;
+	line-height: 18px;
+}
+.loginBtn, .regBtn {
+	display: block;
+	width: 100%;
+	height: 42px;
+	font-size: 16px;
+}
+
+/* Layout
+ ---------------------------------------- */
+
+/* login */
+.wrap-login .signinForm,
+.wrap-register .signinForm,
+.regSuccess .signinForm{
+	padding:20px 0;
+}
+.signin-hd {
+	padding: 0 18px;
+	border-bottom: 1px solid #c50808;
+	color: #c50808;
+	font: bold 20px/42px "microsoft yahei";
+}
+
+.wrap-login .pic{
+	float:left;
+	width:431px;
+	padding:20px 56px;
+	background:url(../img/border01.png) no-repeat right center;
+}
+.wrap-login .pic img{
+	width:430px;
+	height:278px;
+}
+.wrap-login .note {
+	padding: 4px 0;
+}
+/* wrap-login form */
+.wrap-login .form{
+	width:430px;
+	margin: 0 auto;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	padding:30px 55px;
+	color:#666;
+}
+.wrap-login .form .legend {
+	margin: 0 0 30px;
+	*zoom: 1;
+}
+.wrap-login .form .legend:after {
+	display: table;
+	clear: both;
+	content: " ";
+}
+.wrap-login .form .legend h2 {
+	float: left;
+	color:#c50808;
+	font-weight:normal;
+	font-size:26px;
+	line-height:40px;
+}
+
+.wrap-login .form .legend p {
+	float: right;
+	margin: 24px 0 0;
+	line-height: 16px;
+}
+.wrap-login .form-item {
+	margin:0 0 10px;
+}
+.wrap-login .form-item.item-user {
+	margin:0 0 22px;
+}
+.wrap-login .form-item.item-pw {
+	margin:0 0 54px;
+}
+.wrap-login .form-item .item-cont{
+	position:relative;
+	top:0;
+	left:0;
+	margin-left: 0;
+}
+.wrap-login .txt {
+	width: 370px;
+}
+.wrap-login .form .item-cont>.txt {
+	margin: 0;
+	padding-left: 54px;
+	padding: 9px 4px 9px 54px;
+}
+.wrap-login .item-user .txt {
+	background: url(../img/user.png) no-repeat 14px center;
+	padding-right: 24px;
+}
+.wrap-login .item-pw .txt {
+	background: url(../img/pw.png) no-repeat 14px center;
+	padding-right: 24px;
+}
+.wrap-login .item-checkCode{
+	margin-bottom:15px;
+}
+.wrap-login .item-save .chk,
+.wrap-login .item-save label{
+	float:left;
+}
+.wrap-login .form-item .forgetPW{
+	float:right;
+	color:#333;
+}
+.wrap-login .form-item .forgetPW:hover{
+	color:#ec6519;
+}
+.wrap-login .item-checkCode dd{
+	line-height:32px;
+}
+.wrap-login .item-checkCode .txt{
+	float:left;
+	width:80px;
+	height:20px;
+	padding:5px;
+	margin-right:8px;
+	line-height:20px;
+}
+.wrap-login .item-checkCode span{
+	margin-right:5px;
+}
+.wrap-login .item-checkCode img{
+	float:left;
+	width:62px;
+	height:32px;
+	margin-right:8px;
+	cursor:pointer;
+}
+.wrap-login .item-forget{
+	color:#666;
+}
+.wrap-login .item-forget input[type="checkbox"] {
+	position: relative;
+	top: -2px;
+	*top: 0;
+	margin-right: 5px;
+}
+.wrap-login .item-forget a {
+	vertical-align: middle;
+}
+.wrap-login .item-thirdParty a {
+	margin-right: 8px;
+}
+/* wrap-login note */
+.wrap-login .note{
+	position:absolute;
+	top:36px;
+	left:0;
+	overflow:hidden;
+	max-width:250px;
+	height:22px;
+	line-height:22px;
+	white-space:nowrap;
+}
+/* register */
+.wrap-register .signinForm{
+	padding:30px 34px;
+}
+.wrap-register .form{
+	float: left;
+}
+.wrap-register .form-item{
+	width: 720px;
+	margin-bottom: 20px;
+}
+.wrap-register .form-item .item-label{
+	width:120px;
+	color:#666;
+	font-size:14px;
+	line-height:36px;
+	margin-right: 0;
+}
+.wrap-register .form-item .item-cont {
+	width: 600px;
+	float: right;
+	margin-left: 0;
+}
+.wrap-register .item-user .item-cont p {
+	color: #999;
+}
+.wrap-register .item-user .item-cont p a {
+	margin-left: 10px;
+}
+.wrap-register .checkHint{
+	float: left;
+	width: 240px;
+	height: 36px;
+	padding-left: 10px;
+}
+.wrap-register .checkHint span{
+	line-height:18px;
+}
+.wrap-register .checkHint .icon{
+	margin:-2px 2px 0 0;
+}
+.wrap-register .txt{
+	float: left;
+}
+.wrap-register .item-auth .txt{
+	width: 125px;
+}
+.wrap-register .item-agree p{
+	padding-bottom: 10px;
+}
+.wrap-register .item-agree p span{
+	padding-left: 26px;
+}
+
+.wrap-register .item-agree label{
+	color:#999;
+}
+.wrap-register .item-auth .btn{
+	overflow: hidden;
+	float: left;
+	width: 126px;
+	height: 34px;	
+	margin-right: 22px;
+	color:#666;
+	padding: 0;
+	line-height:34px;
+}
+.wrap-register .item-auth .btn.disabled {
+	background-image: none !important;
+	border-color: #c9c9c9 !important;
+}
+.wrap-register .item-auth .phoneCode {
+	width: 140px;
+}
+.wrap-register .regBtn{
+	width: 300px;
+}
+.wrap-register .reg-login{
+	float: right;
+	/*width: 160px;*/
+	height:300px;
+	margin-top:30px;
+	border-left: 1px solid #dfdcd6;
+	text-align: left;
+}
+.wrap-register .reg-login .regLogin-wrap {
+	height:240px;
+	padding:60px 0 0 40px;
+	background: #f0f0f0;
+	border-left: 1px solid #fff;
+}
+.wrap-register .reg-login img{
+	width: 104px;
+	height: 104px;
+	margin:30px 0 15px;
+}
+.wrap-register .reg-login p{
+	padding-bottom: 10px;
+	color: #494949;
+}
+.wrap-register .reg-login .btn{
+	width: 160px;
+	height: 42px;
+	padding: 0;
+	font-size:18px;
+	line-height:42px;
+	margin: 0 0 10px;
+}
+.wrap-register .reg-login .lnk:hover{
+	color:#ec6519;
+}
+
+/* register Success */
+.regSuccess .signinForm{
+	height:340px;
+}
+
