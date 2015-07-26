@@ -9,9 +9,9 @@ $(function(){
 	}
 	
 	$(document).on("click","#logout",function(){
-		$.cookie("_um",null,{domain:".juyouli.com",path:"/",expires:0});
-		$.cookie("_ut",null,{domain:".juyouli.com",path:"/",expires:0});
-		location.href = "http://www.juyouli.com/login.action";
+		$.cookie("_um",null,{domain:".hehefang.com",path:"/",expires:0});
+		$.cookie("_ut",null,{domain:".hehefang.com",path:"/",expires:0});
+		location.href = "http://www.hehefang.com/login.action";
 	});
 	
 });
@@ -49,7 +49,7 @@ function validUser(){
 			var newExpired = serverTime + 2*60*60*1000;
 			var newExpiredDate = new Date();
 			newExpiredDate.setTime(newExpired);
-			$.cookie("_ut",newExpired+"|"+timeDiff,{expires:newExpiredDate,path:"/",domain:".juyouli.com"});
+			$.cookie("_ut",newExpired+"|"+timeDiff,{expires:newExpiredDate,path:"/",domain:".hehefang.com"});
 		}
 	}
 	return true;
